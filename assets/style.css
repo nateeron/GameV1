@@ -1,0 +1,51 @@
+/* ===== Neon Striker — หน้าตาหลัก ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 20%, #0b1026 0%, #04060d 70%);
+  font-family: "Segoe UI", "Sukhumvit Set", sans-serif;
+  color: #cfe3ff;
+}
+
+.wrap { text-align: center; }
+
+canvas {
+  border: 1px solid #1c2b52;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(77, 195, 255, 0.25), 0 0 90px rgba(125, 249, 255, 0.08);
+  background: #05070f;
+  max-width: 96vw;
+  height: auto;
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #6d82ad;
+  letter-spacing: 0.5px;
+}
+.game-stage {
+  position: relative;
+  width: 800px;
+  max-width: 96vw;
+  margin: 0 auto;
+}
+
+.game-stage canvas {
+  display: block;
+  width: 100%;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+

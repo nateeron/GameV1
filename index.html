@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Striker 3D — Space Shooter</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="game-stage">
+      <canvas id="game" width="800" height="600"></canvas>
+      <canvas id="overlay" width="800" height="600" aria-hidden="true"></canvas>
+    </div>
+    <p class="hint">WASD / ลูกศร = เคลื่อนที่ &nbsp;•&nbsp; P = พักเกม &nbsp;•&nbsp; SPACE = เริ่ม / ต่อเกม &nbsp;•&nbsp; 1-5 = สลับอาวุธ</p>
+  </div>
+
+  <!-- Gameplay logic is shared with the original game. Three.js renders it in 3D. -->
+  <script src="src/config.js"></script>
+  <script src="src/state.js"></script>
+  <script src="src/input.js"></script>
+  <script src="src/entities/bullet.js"></script>
+  <script src="src/entities/enemy.js"></script>
+  <script src="src/entities/boss.js"></script>
+  <script src="src/entities/item.js"></script>
+  <script src="src/entities/player.js"></script>
+  <script src="src/systems/particles.js"></script>
+  <script src="src/systems/level.js"></script>
+  <script src="src/systems/collisions.js"></script>
+  <script src="src/ui/hud.js"></script>
+  <script src="src/ui/screens.js"></script>
+  <script type="module" src="src/main-3d.js"></script>
+</body>
+</html>
